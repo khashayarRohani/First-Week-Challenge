@@ -10,19 +10,18 @@
   <body>
     <header>
       <h1>MovieFan</h1>
-
       <nav>
-        <a href="#">Home</a>
-        <a href="">Movies</a>
-        <a href="">Tickets</a>
-        <a href="#">About</a>
+        <a href="#HOME">Home</a>
+        <a href="#MOVIE">Movies</a>
+        <a href="#GUIDE">Guide</a>
+        <a href="#GUIDE" onclick="openLoginWindow()">Login</a>
       </nav>
     </header>
     <main>
-      <section class="HomeSection">
+      <section class="HomeSection" id="HOME">
         <div class="shadow"></div>
         <fieldset class="HomeDiv">
-          <legend style="font-size: 30px">MovieFan</legend>
+          <legend style="font-size: 30px">Movie Fan</legend>
           <h5 class="legendPadding" style="margin-top: 5%">
             A website for introducing movies and buying tickets
           </h5>
@@ -41,27 +40,188 @@
           </a>
         </fieldset>
       </section>
-      <section class="MoviesSection">
-        <div class="ImageContainer">
-          <div class="container">
-            <img src="OIP.jpeg" class="image" />
-            <div class="overlay"></div>
+      <section class="MoviesSection" id="MOVIE">
+        <div class="CardContainer">
+          <div class="card">
+            <div class="container">
+              <img src="./OIP.jpeg" class="image" />
+              <div class="overlay">
+                <div class="text">
+                  <h1>Peaky Blinders</h1>
+                  <address>
+                    Created by Steven Knight<br />
+                    Location :Hull theater
+                    <br />
+                    Price: 10£
+                  </address>
+
+                </div>
+              
+              </div>
+            </div>
           </div>
-          <div class="container">
-            <img src="OIP.jpeg" class="image" />
-            <div class="overlay"></div>
+          <div class="card">
+            <div class="container">
+              <img src="./oppenheimer.jpg" class="image" />
+              <div class="overlay">
+                <div class="text">
+                  <h1>Oppenheimer</h1>
+                  <address>
+                    Directed by Christopher Nolan<br />
+                    Location :Hull theater
+                    <br />
+                    Price: 12£
+                  </address>
+
+                </div>
+              
+              </div>
+            </div>
           </div>
-          <div class="container">
-            <img src="OIP.jpeg" class="image" />
-            <div class="overlay"></div>
+          <div class="card">
+            <div class="container">
+              <img src="./showshank.jpg" class="image" />
+              <div class="overlay">
+                <div class="text">
+                  <h1>Shawshank Redemption</h1>
+                  <address>
+                    Stars: Morgan Freeman & Tom Hanks<br />
+                    Location :Hull theater
+                    <br />
+                    Price: 12£
+                  </address>
+
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="container">
-            <img src="OIP.jpeg" class="image" />
-            <div class="overlay"></div>
+          <div class="card">
+            <div class="container">
+              <img src="./Seven.jpeg" class="image" />
+              <div class="overlay">   
+                 <div class="text">
+                <h1>Se7en</h1>
+                <address>
+                  Stars: Morgan Freeman & Brad Pitt<br />
+                  Location :Hull theater
+                  <br />
+                  Price: 9£
+                </address>
+              </div>
+              
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="container">
+              <img src="./god.jpg" class="image" />
+              <div class="overlay">
+                <div class="text">
+                  <h1>GodFather</h1>
+                  <address>
+                    Stars: Alpachino<br />
+                    Location :Hull theater
+                    <br />
+                    Price: 9£
+                  </address>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="container">
+              <img src="./john.jpg" class="image" />
+              <div class="overlay">
+                <div class="text">
+                  <h1>John wick</h1>
+                  <address>
+                    chapter 4<br />
+                    Location :Hull theater
+                    <br />
+                    Price: 9£
+                  </address>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="container">
+              <img src="./top.jpg" class="image" />
+              <div class="overlay">
+                <div class="text">
+                  <h1>Top Gun</h1>
+                  <address>
+                    Star:Tom Cruise<br />
+                    Location :Hull theater
+                    <br />
+                    Price: 14£
+                  </address>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="container">
+              <img src="./intr.jpeg" class="image" />
+              <div class="overlay"> 
+                  <div class="text">
+                <h1>interestaller</h1>
+                <address>
+                  Directed by Christopher Nolan<br />
+                  Location :Hull theater
+                  <br />
+                  Price: 9£
+                </address>
+              </div>
+              
+            </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="container">
+              <img src="./ring.jpg" class="image" />
+              <div class="overlay">
+                <div class="text">
+                  <h1>Lord Of The Rings</h1>
+                  <address>
+                    Directed by Peter Jackson<br />
+                    Location :Hull theater
+                    <br />
+                    Price: 13£
+                  </address>
+                </div>
+                
+              </div>
+            </div>
           </div>
         </div>
-      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section class="GuideSection" id="GUIDE">
+        <fieldset class="GuideDiv">
+          <legend style="font-size: 30px;color: rgb(255, 255, 255);">Website Guidance</legend>
+          <h5 class="legendPadding" style="margin-top: 5%">
+            Navigation bar is a link that connects you to the related section
+          </h5>
+          <h5>
+            In home page I used flashlight effect for better designing
+          </h5>
+          <h5 class="legendPadding">In Movie Section You can see the details by moving the mouse over the desired movie</h5>
+          <h5 class="legendPadding">Login section is actully new html page that called through JS code</h5>
+          <a
+            href="#HOME"
+            class="legendPadding"
+            style="
+              border: 1px solid wheat;
+              border-radius: 6px;
+              padding: 3%;
+              color: wheat;
+            "
+          >
+            Read More
+          </a>
+        </fieldset>
+      </section>
+    </footer>
   </body>
 </html>
